@@ -48,3 +48,17 @@ for i in range(s):
 if result == 0: 
     print('Введите натуральное число!')
 
+# Задача 14
+# Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
+
+N = int(input('Введите число N: '))
+
+deg = []
+k = 0
+res = 2 ** k
+for i in range(0, N):
+    while (res <= N):
+        deg.append(res)
+        res *= 2
+        k += 1
+print(deg)
